@@ -1,9 +1,9 @@
 import requests
 
 response = requests.post(
-    "https://ollama-1-3hol.onrender.com/api/generate",
+    "https://ollama-2-sl2c.onrender.com/api/generate",
     json={
-        "model": "llama3.2:1b",
+        "model": "qwen2:0.5b",
         "prompt": "Explain Redis caching",
         "stream": False
     },
@@ -11,3 +11,6 @@ response = requests.post(
 )
 
 print(response.json())
+
+
+
